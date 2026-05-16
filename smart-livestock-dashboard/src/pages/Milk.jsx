@@ -193,10 +193,12 @@ export default function Milk({ lang }) {
               padding: "0 20px",
               border: "none",
               borderRadius: "5px",
-              cursor: "pointer"
+              cursor: "pointer",
+              color: "white",
+              backgroundColor: "#4CAF50"
             }}
           >
-            {t.add}
+            {t.add} Milk
           </button>
         </div>
 

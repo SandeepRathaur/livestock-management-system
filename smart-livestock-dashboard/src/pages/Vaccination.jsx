@@ -185,6 +185,7 @@ export default function Vaccination({ lang }) {
               width: "100%",
               height: "38px",
               padding: "5px",
+              borderRadius: "10px"
             }}
           >
             <option value="">Select Breed</option>
@@ -211,6 +212,7 @@ export default function Vaccination({ lang }) {
               width: "100%",
               height: "38px",
               padding: "5px",
+              borderRadius: "10px"
             }}
           >
             <option value="">{t.selectVaccine}</option>
@@ -262,7 +264,16 @@ export default function Vaccination({ lang }) {
                 <td>{record.upcomingDate}</td>
 
                 <td>
-                  <button onClick={() => deleteVaccination(record._id)}>
+                  <button onClick={() => deleteVaccination(record._id)}
+                    style={{
+                      background: "red",
+                      color: "white",
+                      border: "none",
+                      padding: "5px 10px",
+                      borderRadius: "5px",
+                      cursor: "pointer"
+                    }}
+                  >
                     {t.delete}
                   </button>
                 </td>

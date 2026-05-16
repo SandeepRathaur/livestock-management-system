@@ -74,7 +74,7 @@ export default function Topbar({ setOpen, lang, setLang }) {
 
     {/* 🌐 Language Toggle Button */}
     <button
-  className="btn-outline" style={{color:"white",background:"none",border:"1px solid black",overflow:"unset"}}
+  className="btn-outline" style={{color:"white",background:"none",overflow:"unset"}}
   onClick={() => setLang(lang === "en" ? "hi" : "en")}
 >
   🌐 {lang === "en" ? "हिंदी" : "English"}
