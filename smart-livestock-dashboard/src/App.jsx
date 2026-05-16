@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import PrivateRoute from "./components/PrivateRoute";
-import Layout from "./components/layout";
+import Layout from "./components/Layout";
 
 import Landing from "./pages/Landing";
 import Login from "./pages/Login";
