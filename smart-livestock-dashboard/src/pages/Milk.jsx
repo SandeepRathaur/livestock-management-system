@@ -30,7 +30,7 @@ export default function Milk({ lang }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/milk", {
+        const res = await fetch("http://livestock-backend-8osq.onrender.com/api/milk", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token")
           }
@@ -59,7 +59,7 @@ export default function Milk({ lang }) {
       quantity: Number(quantity)
     };
 
-    await fetch("http://localhost:5000/api/milk", {
+    await fetch("http://livestock-backend-8osq.onrender.com/api/milk", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,7 +68,7 @@ export default function Milk({ lang }) {
       body: JSON.stringify(newRecord)
     });
 
-    const res = await fetch("http://localhost:5000/api/milk", {
+    const res = await fetch("http://livestock-backend-8osq.onrender.com/api/milk", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -84,14 +84,14 @@ export default function Milk({ lang }) {
 
   const deleteMilk = async (id) => {
 
-    await fetch(`http://localhost:5000/api/milk/${id}`, {
+    await fetch(`http://livestock-backend-8osq.onrender.com/api/milk/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
     });
 
-    const res = await fetch("http://localhost:5000/api/milk", {
+    const res = await fetch("http://livestock-backend-8osq.onrender.com/api/milk", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
