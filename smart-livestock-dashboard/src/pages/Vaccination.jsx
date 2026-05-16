@@ -28,7 +28,7 @@ export default function Vaccination({ lang }) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://livestock-backend-8osq.onrender.com/api/vaccinations", {
+        const res = await fetch("https://livestock-backend-8osq.onrender.com/api/vaccinations", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token"),
           },
@@ -78,7 +78,7 @@ export default function Vaccination({ lang }) {
       upcomingDate,
     };
 
-    await fetch("http://livestock-backend-8osq.onrender.com/api/vaccinations", {
+    await fetch("https://livestock-backend-8osq.onrender.com/api/vaccinations", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -87,7 +87,7 @@ export default function Vaccination({ lang }) {
       body: JSON.stringify(newRecord),
     });
 
-    const res = await fetch("http://livestock-backend-8osq.onrender.com/api/vaccinations", {
+    const res = await fetch("https://livestock-backend-8osq.onrender.com/api/vaccinations", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
       },
@@ -103,14 +103,14 @@ export default function Vaccination({ lang }) {
   };
 
   const deleteVaccination = async (id) => {
-    await fetch(`http://livestock-backend-8osq.onrender.com/api/vaccinations/${id}`, {
+    await fetch(`https://livestock-backend-8osq.onrender.com/api/vaccinations/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
       },
     });
 
-    const res = await fetch("http://livestock-backend-8osq.onrender.com/api/vaccinations", {
+    const res = await fetch("https://livestock-backend-8osq.onrender.com/api/vaccinations", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token"),
       },

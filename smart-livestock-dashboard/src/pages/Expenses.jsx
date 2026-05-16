@@ -48,7 +48,7 @@ export default function Expenses({ lang }) {
   // ✅ FETCH RECORDS
   const fetchRecords = async () => {
     try {
-      const res = await fetch("http://livestock-backend-8osq.onrender.com/api/expenses", {
+      const res = await fetch("https://livestock-backend-8osq.onrender.com/api/expenses", {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token")
         }
@@ -88,7 +88,7 @@ export default function Expenses({ lang }) {
 
     try {
 
-      await fetch("http://livestock-backend-8osq.onrender.com/api/expenses", {
+      await fetch("https://livestock-backend-8osq.onrender.com/api/expenses", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -117,7 +117,7 @@ export default function Expenses({ lang }) {
 
     try {
 
-      await fetch(`http://livestock-backend-8osq.onrender.com/api/expenses/${id}`, {
+      await fetch(`https://livestock-backend-8osq.onrender.com/api/expenses/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: "Bearer " + localStorage.getItem("token")

@@ -27,7 +27,7 @@ export default function Register() {
     const password = document.querySelector('input[placeholder="Password"]').value;
 
     try {
-      const res = await fetch("http://livestock-backend-8osq.onrender.com/api/auth/register", {
+      const res = await fetch("https://livestock-backend-8osq.onrender.com/api/auth/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

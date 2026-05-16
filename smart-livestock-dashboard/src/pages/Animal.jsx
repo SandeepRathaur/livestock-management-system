@@ -14,7 +14,7 @@ export default function Animal({ lang }) {
   useEffect(() => {
     const fetchAnimals = async () => {
       try {
-        const res = await fetch("http://livestock-backend-8osq.onrender.com/api/animals", {
+        const res = await fetch("https://livestock-backend-8osq.onrender.com/api/animals", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token")
           }
@@ -45,7 +45,7 @@ export default function Animal({ lang }) {
       health: form[5].value
     };
 
-    await fetch("http://livestock-backend-8osq.onrender.com/api/animals", {
+    await fetch("https://livestock-backend-8osq.onrender.com/api/animals", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -54,7 +54,7 @@ export default function Animal({ lang }) {
       body: JSON.stringify(newAnimal)
     });
 
-    const res = await fetch("http://livestock-backend-8osq.onrender.com/api/animals", {
+    const res = await fetch("https://livestock-backend-8osq.onrender.com/api/animals", {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
       }
@@ -68,7 +68,7 @@ export default function Animal({ lang }) {
 
   const deleteAnimal = async (id) => {
 
-    await fetch(`http://livestock-backend-8osq.onrender.com/api/animals/${id}`, {
+    await fetch(`https://livestock-backend-8osq.onrender.com/api/animals/${id}`, {
       method: "DELETE",
       headers: {
         Authorization: "Bearer " + localStorage.getItem("token")
