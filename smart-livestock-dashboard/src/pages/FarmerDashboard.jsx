@@ -29,7 +29,7 @@ export default function FarmerDashboard({ lang }) {
       try {
         const token = localStorage.getItem("token");
 
-        const animalRes = await fetch("http://localhost:5000/api/animals", {
+        const animalRes = await fetch("http://livestock-backend-8osq.onrender.com/api/animals", {
           headers: {
             Authorization: "Bearer " + token
           }
@@ -37,7 +37,7 @@ export default function FarmerDashboard({ lang }) {
         const animalData = await animalRes.json();
         setAnimals(Array.isArray(animalData) ? animalData : []);
 
-        const milkRes = await fetch("http://localhost:5000/api/milk", {
+        const milkRes = await fetch("http://livestock-backend-8osq.onrender.com/api/milk", {
           headers: {
             Authorization: "Bearer " + token
           }

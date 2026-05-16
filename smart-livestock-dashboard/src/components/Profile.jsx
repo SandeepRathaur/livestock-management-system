@@ -13,7 +13,7 @@ export default function Profile({ logout }) {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/users/profile", {
+        const res = await fetch("http://livestock-backend-8osq.onrender.com/api/users/profile", {
           headers: {
             Authorization: "Bearer " + localStorage.getItem("token")
           }
@@ -70,7 +70,7 @@ export default function Profile({ logout }) {
       setImage(base64Image); // instant preview
 
       try {
-        const res = await fetch("http://localhost:5000/api/users/upload", {
+        const res = await fetch("http://livestock-backend-8osq.onrender.com/api/users/upload", {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",

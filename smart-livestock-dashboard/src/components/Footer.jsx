@@ -13,16 +13,16 @@ export default function Footer({ lang }) {
         <div className="footer-section">
           <h3>{t.services}</h3>
           <ul>
-            <a href="http://localhost:5173/animals" style={{display:"block",color:"lightblue",textDecoration:"none"}}>
+            <a href="http://livestock-backend-8osq.onrender.com/animals" style={{display:"block",color:"lightblue",textDecoration:"none"}}>
               {t.animalHealth}
             </a>
-            <a href="http://localhost:5173/vaccination" style={{display:"block",color:"lightblue",textDecoration:"none"}}>
+            <a href="http://livestock-backend-8osq.onrender.com/vaccination" style={{display:"block",color:"lightblue",textDecoration:"none"}}>
               {t.breedManagement}
             </a>
-            <a href="http://localhost:5173/milk" style={{display:"block",color:"lightblue",textDecoration:"none"}}>
+            <a href="http://livestock-backend-8osq.onrender.com/milk" style={{display:"block",color:"lightblue",textDecoration:"none"}}>
               {t.milkProduction}
             </a>
-            <a href="http://localhost:5173/expenses" style={{display:"block",color:"lightblue",textDecoration:"none"}}>
+            <a href="http://livestock-backend-8osq.onrender.com/expenses" style={{display:"block",color:"lightblue",textDecoration:"none"}}>
               {t.farmerSupport}
             </a>
           </ul>
