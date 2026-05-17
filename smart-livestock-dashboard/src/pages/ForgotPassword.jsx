@@ -218,9 +218,9 @@ return ( <div className="auth-bg">
     {/* BACK TO LOGIN */}
     <div style={{ color: "white", marginTop: "10px", textAlign: "center" }}>
       Want to go to Login Page?
-      <Login to="/login" style={{ marginLeft: "10px" }}>
+      <Link to="/login" style={{ marginLeft: "10px" }}>
         login
-      </Login>
+      </Link>
     </div>
 
   </div>
