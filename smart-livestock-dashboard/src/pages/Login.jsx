@@ -1,6 +1,7 @@
 // Import React hooks
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Login() {
 
@@ -134,12 +135,12 @@ export default function Login() {
 
         <div style={{color:"white",marginTop:"10px",textAlign:"center"}}>
           if you forgot your password?
-          <a href={"/forgot-password"} style={{color:"aquamarine"}}>Forgot Password</a>
+          <Link to="/forgot-password" style={{color:"aquamarine"}}>Forgot Password</Link>
         </div>
 
         <div style={{color:"white",marginTop:"10px",textAlign:"center"}}>
           Don't have an account?
-          <a href={"/register"} style={{color:"aquamarine"}}>Signup</a>
+          <Link to="/register" style={{color:"aquamarine"}}>Signup</Link>
         </div>
 
       </form>

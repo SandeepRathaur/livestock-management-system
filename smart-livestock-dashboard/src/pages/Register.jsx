@@ -117,7 +117,7 @@ export default function Register() {
 
           <div style={{color:"white",marginTop:"10px",textAlign:"center"}}>
             Already have an Account?
-            <a href={"/login"} style={{color:"aquamarine"}}>Login</a>
+            <Link to="/login" style={{color:"aquamarine"}}>Login</Link>
           </div>
 
         </div>
