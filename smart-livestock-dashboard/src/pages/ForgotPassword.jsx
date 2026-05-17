@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function ForgotPassword() {
 
@@ -217,9 +218,9 @@ return ( <div className="auth-bg">
     {/* BACK TO LOGIN */}
     <div style={{ color: "white", marginTop: "10px", textAlign: "center" }}>
       Want to go to Login Page?
-      <a href={"/login"} style={{ marginLeft: "10px" }}>
+      <Login to="/login" style={{ marginLeft: "10px" }}>
         login
-      </a>
+      </Login>
     </div>
 
   </div>

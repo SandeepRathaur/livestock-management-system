@@ -37,8 +37,8 @@ export default function Footer({ lang }) {
 
         <div className="footer-section" style={{marginLeft:"auto"}}>
           <h3>{t.contact}</h3>
-          <p style={{fontSize:"16px"}}>📧 {t.email}: saurabh1979mishra@gamil.com</p>
-          <p style={{fontSize:"16px"}}>📞 {t.phone}: +91 9329792091</p>
+          <p style={{fontSize:"16px"}}>📧 {t.email}: srathaur037@gamil.com</p>
+          <p style={{fontSize:"16px"}}>📞 {t.phone}: +91 6232587509</p>
           <p style={{fontSize:"16px"}}>🌐 {t.location}: {t.india}</p>
         </div>
 
