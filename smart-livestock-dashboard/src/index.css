@@ -44,7 +44,7 @@ html {
   color: #2e7d32;
 }
 
-/* heroin */
+/* ================= HERO ================= */
 
 .heroin {
   text-align: center;
@@ -150,8 +150,7 @@ html {
   background: #eef7ff;
 }
 
-
-/* BUTTONS */
+/* ================= BUTTONS ================= */
 
 .btn-primary {
   background: #2e7d32;
@@ -169,7 +168,6 @@ html {
   text-decoration: none;
 }
 
-
 /* ================= INFO / FEATURES ================= */
 
 .info {
@@ -180,7 +178,6 @@ html {
 .info h2 span {
   color: #2e7d32;
 }
-
 
 /* CARDS */
 
@@ -209,7 +206,6 @@ html {
   object-fit: cover;
 }
 
-
 /* ================= FEATURES SECTION ================= */
 
 .features {
@@ -231,7 +227,6 @@ html {
   box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-
 /* ================= HOW IT WORKS ================= */
 
 .how {
@@ -252,7 +247,6 @@ html {
   border-radius: 10px;
 }
 
-
 /* ================= TESTIMONIAL ================= */
 
 .testimonial {
@@ -269,7 +263,6 @@ html {
   text-align: center;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
-
 
 /* ================= SLIDER ================= */
 
@@ -298,7 +291,6 @@ html {
   }
 }
 
-
 /* ================= AUTH ================= */
 
 .auth-bg {
@@ -316,7 +308,6 @@ html {
   width: 350px;
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
-
 
 /* ================= FOOTER ================= */
 
@@ -370,7 +361,6 @@ html {
   font-size: 14px;
 }
 
-
 /* ================= DARK MODE ================= */
 
 body.dark {
@@ -384,7 +374,6 @@ body.dark .navbar {
   background: #1e1e1e;
   color: #fff;
 }
-
 
 /* ================= TOP NAVBAR ================= */
 
@@ -429,7 +418,6 @@ body.dark .navbar {
   cursor: pointer;
 }
 
-
 /* MOBILE */
 
 @media (max-width: 768px) {
@@ -454,8 +442,7 @@ body.dark .navbar {
 
 }
 
-
-/* FULL PAGE LAYOUT */
+/* ================= FULL PAGE LAYOUT ================= */
 
 html,
 body,
@@ -469,7 +456,6 @@ body,
   display: flex;
   flex-direction: column;
 }
-
 
 /* TOPBAR */
 
@@ -506,7 +492,6 @@ body,
   border-radius: 4px;
 }
 
-
 /* NAVBAR BELOW TOPBAR */
 
 .horizontal-nav {
@@ -526,7 +511,6 @@ body,
   text-decoration: underline;
 }
 
-
 /* MAIN CONTENT */
 
 .main-content {
@@ -535,13 +519,11 @@ body,
   overflow: visible;
 }
 
-
 /* FOOTER STICK BOTTOM */
 
 .footer {
   margin-top: auto;
 }
-
 
 /* EXTRA */
 
@@ -577,7 +559,6 @@ body,
   background-color: rgba(255,255,255,0.7);
 }
 
-
 /* ================= ANIMAL DASHBOARD ================= */
 
 .container {
@@ -589,7 +570,6 @@ body,
 .container h2 {
   margin-bottom: 20px;
 }
-
 
 /* FORM */
 
@@ -616,7 +596,6 @@ body,
 .form button:hover {
   background-color: #45a049;
 }
-
 
 /* TABLE */
 
@@ -650,7 +629,6 @@ body,
   transition: 0.2s;
 }
 
-
 /* ================================
    RESPONSIVE ONLY
 ================================ */
@@ -659,7 +637,6 @@ body,
   width: 100%;
   overflow-x: auto;
 }
-
 
 /* Animal Dashboard Mobile */
 
@@ -698,7 +675,6 @@ body,
 
 }
 
-
 /* Small Mobile */
 
 @media (max-width: 320px) {
@@ -714,7 +690,6 @@ body,
   }
 
 }
-
 
 /* =========================
    RESPONSIVE FIX FOR MILK + EXPENSES
@@ -751,7 +726,6 @@ body,
 
 }
 
-
 /* ==================================================
    AUTH PAGES RESPONSIVE DESIGN
    LOGIN + REGISTER
@@ -770,7 +744,6 @@ body,
   box-sizing: border-box;
 }
 
-
 /* Login + Register Form */
 
 .login-form-container,
@@ -781,7 +754,6 @@ body,
   box-sizing: border-box;
 }
 
-
 /* Auth Inputs */
 
 .auth-input {
@@ -791,7 +763,6 @@ body,
   margin-top: 5px;
   border-radius: 5px;
 }
-
 
 /* Password Field */
 
@@ -805,7 +776,6 @@ body,
   box-sizing: border-box;
 }
 
-
 /* Buttons */
 
 .login-button,
@@ -815,7 +785,6 @@ body,
   min-width: 120px;
   cursor: pointer;
 }
-
 
 /* ================= TABLET ================= */
 
@@ -843,7 +812,6 @@ body,
   }
 
 }
-
 
 /* ================= MOBILE ================= */
 
@@ -889,12 +857,45 @@ body,
     font-size: 18px !important;
   }
 
+  /* ===============================
+     MOBILE PASSWORD EYE BUTTON FIX
+  =============================== */
+
+  .password-container {
+    width: 100% !important;
+    position: relative !important;
+  }
+
+  .password-container input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding-right: 50px !important;
+  }
+
   .show-password-btn {
-    font-size: 16px;
+    position: absolute !important;
+    right: 5px !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+
+    width: 35px !important;
+    height: 35px !important;
+
+    padding: 0 !important;
+    margin: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: transparent !important;
+    border: none !important;
+
+    cursor: pointer !important;
+    z-index: 2 !important;
   }
 
 }
-
 
 /* ================= VERY SMALL MOBILE ================= */
 
