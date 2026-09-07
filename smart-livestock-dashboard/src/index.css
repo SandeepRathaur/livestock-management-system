@@ -4,6 +4,10 @@ body {
   font-family: 'Playfair Display', serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ================= NAVBAR ================= */
 
 .navbar {
@@ -14,12 +18,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   z-index: 100;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 .nav-logo {
@@ -60,6 +60,13 @@ html {
   margin-left: 10px;
 }
 
+/* Landing page hero */
+
+.hero {
+  background: linear-gradient(to right, #aaef99, #ffffff);
+  position: relative;
+}
+
 .tagline1 {
   margin-top: -10px;
   color: #444;
@@ -85,6 +92,7 @@ html {
 
 .hero-right img {
   width: 450px;
+  max-width: 100%;
   border-radius: 10px;
 }
 
@@ -102,9 +110,15 @@ html {
   background: #fafafa;
 }
 
+.trusted-logos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
 }
 
@@ -112,7 +126,7 @@ html {
   padding: 20px;
   border-radius: 10px;
   background: white;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   transition: 0.3s;
 }
 
@@ -127,27 +141,20 @@ html {
 
 .dashboard-preview img {
   width: 80%;
+  max-width: 100%;
   border-radius: 10px;
+}
+
+.benefits {
+  padding: 60px 20px;
 }
 
 .benefit-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 25px;
   text-align: center;
   padding: 40px;
-}
-
-.faq {
-  padding: 60px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.cta {
-  text-align: center;
-  padding: 60px;
-  background: #eef7ff;
 }
 
 /* ================= BUTTONS ================= */
@@ -158,6 +165,8 @@ html {
   padding: 12px 26px;
   border-radius: 6px;
   text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
 .btn-outline {
@@ -166,6 +175,8 @@ html {
   padding: 12px 26px;
   border-radius: 6px;
   text-decoration: none;
+  background: transparent;
+  cursor: pointer;
 }
 
 /* ================= INFO / FEATURES ================= */
@@ -183,7 +194,7 @@ html {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
@@ -192,8 +203,8 @@ html {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform .3s;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 .info-card:hover {
@@ -216,7 +227,7 @@ html {
 .features-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
 
@@ -224,7 +235,7 @@ html {
   background: white;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* ================= HOW IT WORKS ================= */
@@ -237,7 +248,7 @@ html {
 .how-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
 
@@ -261,7 +272,34 @@ html {
   padding: 40px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* ================= FAQ ================= */
+
+.faq {
+  padding: 60px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+/* ================= CTA ================= */
+
+.cta {
+  text-align: center;
+  padding: 60px;
+  background: #eef7ff;
 }
 
 /* ================= SLIDER ================= */
@@ -306,7 +344,7 @@ html {
   padding: 40px;
   border-radius: 12px;
   width: 350px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
 }
 
 /* ================= FOOTER ================= */
@@ -319,7 +357,7 @@ html {
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 30px;
   padding: 0 50px;
 }
@@ -385,6 +423,7 @@ body.dark .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .nav-left {
@@ -418,36 +457,12 @@ body.dark .navbar {
   cursor: pointer;
 }
 
-/* MOBILE */
-
-@media (max-width: 768px) {
-
-  .top-navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .nav-links {
-    flex-wrap: wrap;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
-
-  .testimonial-box {
-    width: 90%;
-  }
-
-}
-
 /* ================= FULL PAGE LAYOUT ================= */
 
 html,
 body,
 #root {
-  height: 100%;
+  min-height: 100%;
   margin: 0;
 }
 
@@ -556,7 +571,7 @@ body,
 }
 
 .dropdown:hover {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 /* ================= ANIMAL DASHBOARD ================= */
@@ -603,7 +618,7 @@ body,
   width: 100%;
   margin-top: 30px;
   border-collapse: collapse;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -629,18 +644,210 @@ body,
   transition: 0.2s;
 }
 
-/* ================================
-   RESPONSIVE ONLY
-================================ */
+/* ================= RESPONSIVE ONLY ================= */
 
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
 }
 
-/* Animal Dashboard Mobile */
+/* ================= AUTH PAGES RESPONSIVE ================= */
+
+.auth-bg {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+}
+
+.login-form-container,
+.register-form-container {
+  width: 100%;
+  max-width: 320px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.auth-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+.password-container {
+  width: 100%;
+  position: relative;
+}
+
+.password-container .auth-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-button,
+.register-button {
+  display: block;
+  margin: 15px auto !important;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+/* ==================================================
+   TABLET RESPONSIVE
+================================================== */
 
 @media (max-width: 768px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 14px 20px;
+  }
+
+  .top-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+  /* LANDING HERO */
+
+  .hero-container {
+    flex-direction: column;
+    padding: 40px 25px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-left,
+  .hero-right {
+    width: 100%;
+  }
+
+  .hero-left h1 {
+    font-size: 2.2rem;
+    line-height: 1.3;
+  }
+
+  .hero-right img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+
+  .hero-actions,
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  /* STATS */
+
+  .stats {
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 30px 20px;
+    text-align: center;
+  }
+
+  /* TRUSTED */
+
+  .trusted {
+    padding: 35px 20px;
+  }
+
+  .trusted-logos {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  /* FEATURES */
+
+  .features {
+    padding: 50px 25px;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* DASHBOARD */
+
+  .dashboard-preview {
+    padding: 50px 25px;
+  }
+
+  .dashboard-preview img {
+    width: 100%;
+    max-width: 650px;
+  }
+
+  /* BENEFITS */
+
+  .benefits {
+    padding: 50px 25px;
+    text-align: center;
+  }
+
+  .benefit-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 15px;
+    gap: 20px;
+  }
+
+  /* HOW */
+
+  .how {
+    padding: 50px 25px;
+  }
+
+  .how-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* TESTIMONIAL */
+
+  .testimonial {
+    padding: 50px 25px;
+  }
+
+  .testimonial-box {
+    width: 100%;
+    max-width: 600px;
+    box-sizing: border-box;
+  }
+
+  /* FAQ */
+
+  .faq {
+    width: auto;
+    padding: 45px 25px;
+    box-sizing: border-box;
+  }
+
+  /* CTA */
+
+  .cta {
+    padding: 50px 25px;
+  }
+
+  /* DASHBOARD */
 
   .container {
     width: 95%;
@@ -664,54 +871,6 @@ body,
   .form-grid button {
     width: 100%;
     margin: 0;
-  }
-
-  .styled-table th,
-  .styled-table td {
-    padding: 8px;
-    font-size: 14px;
-    white-space: nowrap;
-  }
-
-}
-
-/* Small Mobile */
-
-@media (max-width: 320px) {
-
-  .container h2 {
-    font-size: 20px !important;
-  }
-
-  .styled-table th,
-  .styled-table td {
-    font-size: 12px;
-    padding: 6px;
-  }
-
-}
-
-/* =========================
-   RESPONSIVE FIX FOR MILK + EXPENSES
-========================= */
-
-@media (max-width: 768px) {
-
-  form[style] {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 12px !important;
-  }
-
-  form[style] > div {
-    width: 100%;
-  }
-
-  form[style] input,
-  form[style] select,
-  form[style] button {
-    width: 100%;
     box-sizing: border-box;
   }
 
@@ -724,71 +883,14 @@ body,
     min-width: 700px;
   }
 
-}
+  .styled-table th,
+  .styled-table td {
+    padding: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
 
-/* ==================================================
-   AUTH PAGES RESPONSIVE DESIGN
-   LOGIN + REGISTER
-================================================== */
-
-.auth-bg {
-  width: 100%;
-  min-height: 100vh;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.auth-card {
-  width: 100%;
-  max-width: 420px;
-  box-sizing: border-box;
-}
-
-/* Login + Register Form */
-
-.login-form-container,
-.register-form-container {
-  width: 100%;
-  max-width: 320px;
-  margin: 20px auto;
-  box-sizing: border-box;
-}
-
-/* Auth Inputs */
-
-.auth-input {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 10px 12px;
-  margin-top: 5px;
-  border-radius: 5px;
-}
-
-/* Password Field */
-
-.password-container {
-  width: 100%;
-  position: relative;
-}
-
-.password-container .auth-input {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-/* Buttons */
-
-.login-button,
-.register-button {
-  display: block;
-  margin: 15px auto !important;
-  min-width: 120px;
-  cursor: pointer;
-}
-
-/* ================= TABLET ================= */
-
-@media (max-width: 768px) {
+  /* AUTH */
 
   .auth-bg {
     padding: 20px 15px;
@@ -811,11 +913,216 @@ body,
     font-size: 15px;
   }
 
+  /* MILK + EXPENSES */
+
+  form[style] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
+  }
+
+  form[style] > div {
+    width: 100%;
+  }
+
+  form[style] input,
+  form[style] select,
+  form[style] button {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
-/* ================= MOBILE ================= */
+/* ==================================================
+   MOBILE RESPONSIVE
+================================================== */
 
 @media (max-width: 480px) {
+
+  /* NAVBAR */
+
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  /* HERO */
+
+  .hero-container {
+    padding: 35px 15px;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 1.9rem;
+    line-height: 1.3;
+  }
+
+  .tagline {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .hero-actions,
+  .hero-buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-outline,
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-outline {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .hero-right img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* STATS */
+
+  .stats {
+    flex-direction: column;
+    gap: 18px;
+    padding: 30px 15px;
+  }
+
+  /* TRUSTED */
+
+  .trusted {
+    padding: 30px 15px;
+  }
+
+  .trusted-logos {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  /* FEATURES */
+
+  .features {
+    padding: 40px 15px;
+  }
+
+  .features h2 {
+    font-size: 1.7rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 25px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  /* DASHBOARD PREVIEW */
+
+  .dashboard-preview {
+    padding: 40px 15px;
+  }
+
+  .dashboard-preview h2 {
+    font-size: 1.7rem;
+  }
+
+  .dashboard-preview img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* BENEFITS */
+
+  .benefits {
+    padding: 40px 15px;
+  }
+
+  .benefits h2 {
+    font-size: 1.7rem;
+  }
+
+  .benefit-grid {
+    grid-template-columns: 1fr;
+    padding: 25px 10px;
+    gap: 20px;
+  }
+
+  /* HOW */
+
+  .how {
+    padding: 40px 15px;
+  }
+
+  .how h2 {
+    font-size: 1.7rem;
+  }
+
+  .how-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    margin-top: 25px;
+  }
+
+  .how-card {
+    padding: 20px;
+  }
+
+  /* TESTIMONIAL */
+
+  .testimonial {
+    padding: 40px 15px;
+  }
+
+  .testimonial-box {
+    width: 100%;
+    padding: 25px 15px;
+    box-sizing: border-box;
+  }
+
+  /* FAQ */
+
+  .faq {
+    width: 100%;
+    padding: 40px 15px;
+    box-sizing: border-box;
+  }
+
+  .faq h2 {
+    font-size: 1.7rem;
+  }
+
+  .faq-item {
+    margin-bottom: 25px;
+  }
+
+  /* CTA */
+
+  .cta {
+    padding: 45px 15px;
+  }
+
+  .cta h2 {
+    font-size: 1.7rem;
+  }
+
+  .cta .btn-primary {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 15px;
+  }
+
+  /* AUTH */
 
   .auth-bg {
     padding: 15px 10px;
@@ -857,9 +1164,7 @@ body,
     font-size: 18px !important;
   }
 
-  /* ===============================
-     MOBILE PASSWORD EYE BUTTON FIX
-  =============================== */
+  /* PASSWORD EYE BUTTON */
 
   .password-container {
     width: 100% !important;
@@ -894,12 +1199,42 @@ body,
     cursor: pointer !important;
     z-index: 2 !important;
   }
-
 }
 
-/* ================= VERY SMALL MOBILE ================= */
+/* ==================================================
+   VERY SMALL MOBILE
+================================================== */
 
 @media (max-width: 320px) {
+
+  .hero-left h1 {
+    font-size: 1.6rem;
+  }
+
+  .features h2,
+  .dashboard-preview h2,
+  .benefits h2,
+  .how h2,
+  .faq h2,
+  .cta h2 {
+    font-size: 1.4rem;
+  }
+
+  .btn-primary,
+  .btn-outline {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .container h2 {
+    font-size: 20px !important;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
 
   .auth-card {
     padding: 15px 10px;
@@ -917,5 +1252,4 @@ body,
   .auth-input {
     font-size: 13px !important;
   }
-
 }

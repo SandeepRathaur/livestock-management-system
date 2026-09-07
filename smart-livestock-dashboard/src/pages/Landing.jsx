@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { text } from "../utils/translations";
 
-export default function Landing({lang, setLang}) {
+export default function Landing({ lang, setLang }) {
   const navigate = useNavigate();
 
   // ✅ translation object
@@ -28,7 +28,7 @@ export default function Landing({lang, setLang}) {
             </p>
 
             <div className="hero-actions">
-              <button 
+              <button
                 className="btn-primary"
                 onClick={() => navigate("/register")}
               >
@@ -214,7 +214,7 @@ export default function Landing({lang, setLang}) {
           <strong>{t.author}</strong>
 
           <div className="hero-buttons">
-            <button 
+            <button
               className="btn-primary"
               onClick={() => navigate("/register")}
             >
@@ -257,7 +257,7 @@ export default function Landing({lang, setLang}) {
 
         <p>{t.ctaDesc}</p>
 
-        <button 
+        <button
           className="btn-primary"
           onClick={() => navigate("/register")}
         >
