@@ -17,9 +17,11 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   z-index: 100;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .nav-logo {
   font-size: 22px;
   font-weight: bold;
@@ -41,111 +43,116 @@ html {
 .nav-actions a:hover {
   color: #2e7d32;
 }
+
 /* heroin */
+
 .heroin {
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
-    padding: 120px 20px 80px;
-    background: linear-gradient(to right, #aaef99, #ffffff);
-    
-    position: relative;
-    
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 20px 80px;
+  background: linear-gradient(to right, #aaef99, #ffffff);
+  position: relative;
 }
-.heroin h1{
-    font-size: 2.8rem;
-    margin-left:10px;
+
+.heroin h1 {
+  font-size: 2.8rem;
+  margin-left: 10px;
 }
 
 .tagline1 {
-    margin-top: -10px;
-    color: #444;
+  margin-top: -10px;
+  color: #444;
 }
-.stats{
- display:flex;
- justify-content:center;
- gap:40px;
- margin-top:30px;
- font-weight:bold;
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+  font-weight: bold;
 }
+
 /* HERO */
-.hero-container{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:60px;
-gap:40px;
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px;
+  gap: 40px;
 }
 
-.hero-right img{
-width:450px;
-border-radius:10px;
+.hero-right img {
+  width: 450px;
+  border-radius: 10px;
 }
 
-.stats{
-display:flex;
-justify-content:space-around;
-padding:40px;
-background:#f7f7f7;
-font-weight:bold;
+.stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  background: #f7f7f7;
+  font-weight: bold;
 }
 
-.trusted{
-text-align:center;
-padding:40px;
-background:#fafafa;
+.trusted {
+  text-align: center;
+  padding: 40px;
+  background: #fafafa;
 }
 
-.features-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:25px;
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 25px;
 }
 
-.feature-card{
-padding:20px;
-border-radius:10px;
-background:white;
-box-shadow:0 5px 15px rgba(0,0,0,0.05);
-transition:0.3s;
+.feature-card {
+  padding: 20px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: 0.3s;
 }
 
-.feature-card:hover{
-transform:translateY(-6px);
+.feature-card:hover {
+  transform: translateY(-6px);
 }
 
-.dashboard-preview{
-text-align:center;
-padding:60px;
+.dashboard-preview {
+  text-align: center;
+  padding: 60px;
 }
 
-.dashboard-preview img{
-width:80%;
-border-radius:10px;
+.dashboard-preview img {
+  width: 80%;
+  border-radius: 10px;
 }
 
-.benefit-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:25px;
-text-align:center;
-padding:40px;
+.benefit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 25px;
+  text-align: center;
+  padding: 40px;
 }
 
-.faq{
-padding:60px;
-max-width:800px;
-margin:auto;
+.faq {
+  padding: 60px;
+  max-width: 800px;
+  margin: auto;
 }
 
-.cta{
-text-align:center;
-padding:60px;
-background:#eef7ff;
+.cta {
+  text-align: center;
+  padding: 60px;
+  background: #eef7ff;
 }
 
 
 /* BUTTONS */
+
 .btn-primary {
   background: #2e7d32;
   color: white;
@@ -162,18 +169,21 @@ background:#eef7ff;
   text-decoration: none;
 }
 
+
 /* ================= INFO / FEATURES ================= */
 
-.info{
-  padding:80px 20px;
-  text-align:center;
+.info {
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.info h2 span{
-  color:#2e7d32;
+.info h2 span {
+  color: #2e7d32;
 }
+
 
 /* CARDS */
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
@@ -186,7 +196,7 @@ background:#eef7ff;
   border-radius: 10px;
   overflow: hidden;
   transition: transform .3s;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .info-card:hover {
@@ -199,63 +209,67 @@ background:#eef7ff;
   object-fit: cover;
 }
 
+
 /* ================= FEATURES SECTION ================= */
 
-.features{
-  padding:80px 20px;
-  text-align:center;
+.features {
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.features-grid{
-  margin-top:40px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+.features-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
 }
 
-.feature-card{
-  background:white;
-  padding:25px;
-  border-radius:10px;
-  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+.feature-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
+
 
 /* ================= HOW IT WORKS ================= */
 
-.how{
-  padding:80px 20px;
-  text-align:center;
+.how {
+  padding: 80px 20px;
+  text-align: center;
 }
 
-.how-grid{
-  margin-top:40px;
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:25px;
+.how-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  gap: 25px;
 }
 
-.how-card{
-  background:#f5f5f5;
-  padding:25px;
-  border-radius:10px;
+.how-card {
+  background: #f5f5f5;
+  padding: 25px;
+  border-radius: 10px;
 }
+
 
 /* ================= TESTIMONIAL ================= */
 
-.testimonial{
-  background:#e8f5e9;
-  padding:80px 20px;
+.testimonial {
+  background: #e8f5e9;
+  padding: 80px 20px;
 }
 
-.testimonial-box{
-  max-width:600px;
-  margin:auto;
-  background:white;
-  padding:40px;
-  border-radius:12px;
-  text-align:center;
-  box-shadow:0 5px 20px rgba(0,0,0,0.1);
+.testimonial-box {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
+
 
 /* ================= SLIDER ================= */
 
@@ -275,9 +289,15 @@ background:#eef7ff;
 }
 
 @keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
+
 
 /* ================= AUTH ================= */
 
@@ -297,57 +317,59 @@ background:#eef7ff;
   box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
 
+
 /* ================= FOOTER ================= */
 
-.footer{
+.footer {
   background: #1e3d2f;
   color: white;
   padding-top: 40px;
 }
 
-.footer-container{
+.footer-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 30px;
   padding: 0 50px;
 }
 
-.footer-section h2{
+.footer-section h2 {
   color: #7CFC00;
 }
 
-.footer-section h3{
+.footer-section h3 {
   margin-bottom: 10px;
 }
 
-.footer-section p{
+.footer-section p {
   font-size: 14px;
   line-height: 1.6;
 }
 
-.footer-section ul{
+.footer-section ul {
   list-style: none;
   padding: 0;
 }
 
-.footer-section ul li{
+.footer-section ul li {
   margin-bottom: 8px;
   cursor: pointer;
   transition: 0.3s;
 }
 
-.footer-section ul li:hover{
+.footer-section ul li:hover {
   color: #7CFC00;
   padding-left: 5px;
 }
 
-.footer-bottom{
+.footer-bottom {
   text-align: center;
   padding: 15px;
   border-top: 1px solid #3c5a4d;
   margin-top: 30px;
   font-size: 14px;
 }
+
 
 /* ================= DARK MODE ================= */
 
@@ -362,6 +384,7 @@ body.dark .navbar {
   background: #1e1e1e;
   color: #fff;
 }
+
 
 /* ================= TOP NAVBAR ================= */
 
@@ -406,6 +429,7 @@ body.dark .navbar {
   cursor: pointer;
 }
 
+
 /* MOBILE */
 
 @media (max-width: 768px) {
@@ -420,19 +444,22 @@ body.dark .navbar {
     flex-wrap: wrap;
   }
 
-  .hero h1{
-    font-size:2rem;
+  .hero h1 {
+    font-size: 2rem;
   }
-  
-  .testimonial-box{
-    width:90%;
+
+  .testimonial-box {
+    width: 90%;
   }
 
 }
 
+
 /* FULL PAGE LAYOUT */
 
-html, body, #root {
+html,
+body,
+#root {
   height: 100%;
   margin: 0;
 }
@@ -442,6 +469,7 @@ html, body, #root {
   display: flex;
   flex-direction: column;
 }
+
 
 /* TOPBAR */
 
@@ -461,7 +489,8 @@ html, body, #root {
   gap: 12px;
 }
 
-.menu-btn, .icon-btn {
+.menu-btn,
+.icon-btn {
   background: none;
   border: none;
   color: white;
@@ -476,6 +505,7 @@ html, body, #root {
   padding: 6px 12px;
   border-radius: 4px;
 }
+
 
 /* NAVBAR BELOW TOPBAR */
 
@@ -496,6 +526,7 @@ html, body, #root {
   text-decoration: underline;
 }
 
+
 /* MAIN CONTENT */
 
 .main-content {
@@ -504,11 +535,13 @@ html, body, #root {
   overflow: visible;
 }
 
+
 /* FOOTER STICK BOTTOM */
 
 .footer {
   margin-top: auto;
 }
+
 
 /* EXTRA */
 
@@ -543,7 +576,8 @@ html, body, #root {
 .dropdown:hover {
   background-color: rgba(255,255,255,0.7);
 }
-/* for animal dashboard */
+
+
 /* ================= ANIMAL DASHBOARD ================= */
 
 .container {
@@ -555,6 +589,7 @@ html, body, #root {
 .container h2 {
   margin-bottom: 20px;
 }
+
 
 /* FORM */
 
@@ -582,13 +617,14 @@ html, body, #root {
   background-color: #45a049;
 }
 
+
 /* TABLE */
 
 .styled-table {
   width: 100%;
   margin-top: 30px;
   border-collapse: collapse;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -614,101 +650,271 @@ html, body, #root {
   transition: 0.2s;
 }
 
+
 /* ================================
-   RESPONSIVE ONLY (ADD AT END)
-   No old CSS changed
-   No logic changed
+   RESPONSIVE ONLY
 ================================ */
 
-/* Table scroll on mobile */
-.table-wrapper{
-  width:100%;
-  overflow-x:auto;
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
 }
 
-/* Mobile responsive */
-@media (max-width:768px){
 
-  .container{
-    width:95%;
-    margin:20px auto;
-    padding:10px;
+/* Animal Dashboard Mobile */
+
+@media (max-width: 768px) {
+
+  .container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
   }
 
-  .container h2{
-    font-size:24px !important;
-    line-height:1.3;
+  .container h2 {
+    font-size: 24px !important;
+    line-height: 1.3;
   }
 
-  .form-grid{
-    display:grid !important;
-    grid-template-columns:1fr !important;
-    gap:10px;
+  .form-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px;
   }
 
   .form-grid input,
   .form-grid select,
-  .form-grid button{
-    width:100%;
-    margin:0;
+  .form-grid button {
+    width: 100%;
+    margin: 0;
   }
 
   .styled-table th,
-  .styled-table td{
-    padding:8px;
-    font-size:14px;
-    white-space:nowrap;
+  .styled-table td {
+    padding: 8px;
+    font-size: 14px;
+    white-space: nowrap;
   }
 
 }
 
-/* Small mobile */
-@media (max-width:320px){
 
-  .container h2{
-    font-size:20px !important;
+/* Small Mobile */
+
+@media (max-width: 320px) {
+
+  .container h2 {
+    font-size: 20px !important;
   }
 
   .styled-table th,
-  .styled-table td{
-    font-size:12px;
-    padding:6px;
+  .styled-table td {
+    font-size: 12px;
+    padding: 6px;
   }
 
 }
+
+
 /* =========================
    RESPONSIVE FIX FOR MILK + EXPENSES
 ========================= */
 
-@media (max-width:768px){
+@media (max-width: 768px) {
 
-  /* Milk + Expenses inline flex forms */
-  form[style]{
-    display:flex !important;
-    flex-direction:column !important;
-    align-items:stretch !important;
-    gap:12px !important;
+  form[style] {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px !important;
   }
 
-  form[style] > div{
-    width:100%;
+  form[style] > div {
+    width: 100%;
   }
 
   form[style] input,
   form[style] select,
-  form[style] button{
-    width:100%;
-    box-sizing:border-box;
+  form[style] button {
+    width: 100%;
+    box-sizing: border-box;
   }
 
-  /* Table mobile scroll */
-  .table-wrapper{
-    width:100%;
-    overflow-x:auto;
+  .table-wrapper {
+    width: 100%;
+    overflow-x: auto;
   }
 
-  .styled-table{
-    min-width:700px;
+  .styled-table {
+    min-width: 700px;
+  }
+
+}
+
+
+/* ==================================================
+   AUTH PAGES RESPONSIVE DESIGN
+   LOGIN + REGISTER
+================================================== */
+
+.auth-bg {
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  box-sizing: border-box;
+}
+
+
+/* Login + Register Form */
+
+.login-form-container,
+.register-form-container {
+  width: 100%;
+  max-width: 320px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+
+/* Auth Inputs */
+
+.auth-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+
+
+/* Password Field */
+
+.password-container {
+  width: 100%;
+  position: relative;
+}
+
+.password-container .auth-input {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+/* Buttons */
+
+.login-button,
+.register-button {
+  display: block;
+  margin: 15px auto !important;
+  min-width: 120px;
+  cursor: pointer;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (max-width: 768px) {
+
+  .auth-bg {
+    padding: 20px 15px;
+    align-items: center;
+  }
+
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+    padding: 30px 25px;
+  }
+
+  .login-form-container,
+  .register-form-container {
+    max-width: 100%;
+  }
+
+  .auth-input {
+    width: 100%;
+    font-size: 15px;
+  }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 480px) {
+
+  .auth-bg {
+    padding: 15px 10px;
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+
+  .auth-card {
+    width: 100%;
+    padding: 20px 15px;
+    border-radius: 10px;
+  }
+
+  .welcome-title,
+  .register-title {
+    font-size: 24px !important;
+  }
+
+  .cattlecloud-title {
+    font-size: 32px !important;
+  }
+
+  .login-form-container,
+  .register-form-container {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .auth-input {
+    width: 100%;
+    font-size: 14px !important;
+    padding: 10px;
+  }
+
+  .login-button,
+  .register-button {
+    width: 100%;
+    margin: 15px 0 !important;
+    font-size: 18px !important;
+  }
+
+  .show-password-btn {
+    font-size: 16px;
+  }
+
+}
+
+
+/* ================= VERY SMALL MOBILE ================= */
+
+@media (max-width: 320px) {
+
+  .auth-card {
+    padding: 15px 10px;
+  }
+
+  .welcome-title,
+  .register-title {
+    font-size: 21px !important;
+  }
+
+  .cattlecloud-title {
+    font-size: 28px !important;
+  }
+
+  .auth-input {
+    font-size: 13px !important;
   }
 
 }

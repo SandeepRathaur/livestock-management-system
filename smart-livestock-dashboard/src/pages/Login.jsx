@@ -9,7 +9,7 @@ export default function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [show,setShow]=useState(false);
+  const [show, setShow] = useState(false);
   const [error, setError] = useState("");
 
   // ✅ UPDATED LOGIN FUNCTION (BACKEND)
@@ -47,29 +47,37 @@ export default function Login() {
   return (
     <div className="auth-bg">
 
-      <form className="auth-card" onSubmit={submit} style={{background:"none"}}>
+      <form className="auth-card" onSubmit={submit} style={{ background: "none" }}>
 
-        <h2 style={{fontSize:"30px",fontWeight:"lighter",textAlign:"center"}}>
+        <h2
+          className="welcome-title"
+          style={{ fontSize: "30px", fontWeight: "lighter", textAlign: "center" }}
+        >
           Welcome to
         </h2>
 
-        <h2 style={{fontSize:"40px",textAlign:"center"}}>
+        <h2
+          className="cattlecloud-title"
+          style={{ fontSize: "40px", textAlign: "center" }}
+        >
           CattleCloud
         </h2>
 
-        <div style={{marginLeft:"20%"}}>
+        {/* Changed only for responsive styling */}
+        <div className="login-form-container">
 
-          <div style={{fontWeight:"bold",color:"aquamarine"}}>
+          <div style={{ fontWeight: "bold", color: "aquamarine" }}>
             Email:-
           </div>
 
           <input
+            className="auth-input"
             type="email"
             placeholder="Email Address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            style={{display:"block",fontSize:"15px",marginBottom:"10px"}}
+            style={{ display: "block", fontSize: "15px", marginBottom: "10px" }}
           />
 
           {error && (
@@ -78,36 +86,38 @@ export default function Login() {
             </p>
           )}
 
-          <div style={{fontWeight:"bold",color:"aquamarine"}}>
+          <div style={{ fontWeight: "bold", color: "aquamarine" }}>
             Password:-
           </div>
 
-          <div style={{position:"relative", width:"fit-content"}}>
+          <div className="password-container" style={{ position: "relative" }}>
 
             <input
+              className="auth-input password-input"
               type={show ? "text" : "password"}
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
               style={{
-                display:"block",
-                fontSize:"15px",
-                paddingRight:"40px"
+                display: "block",
+                fontSize: "15px",
+                paddingRight: "40px"
               }}
             />
 
             <button
               type="button"
               onClick={() => setShow(!show)}
+              className="show-password-btn"
               style={{
-                position:"absolute",
-                right:"5px",
-                top:"50%",
-                transform:"translateY(-50%)",
-                background:"none",
-                border:"none",
-                cursor:"pointer"
+                position: "absolute",
+                right: "5px",
+                top: "50%",
+                transform: "translateY(-50%)",
+                background: "none",
+                border: "none",
+                cursor: "pointer"
               }}
             >
               {show ? "🙈" : "👁️"}
@@ -118,29 +128,32 @@ export default function Login() {
 
         <button
           type="submit"
+          className="login-button"
           style={{
-            color:"white",
-            backgroundColor:"aqua",
-            padding:"10px",
-            width:"fit-content",
-            fontSize:"20px",
-            textAlign:"center",
-            borderRadius:"25px",
-            margin:"10px",
-            marginLeft:"120px"
+            color: "white",
+            backgroundColor: "aqua",
+            padding: "10px",
+            fontSize: "20px",
+            textAlign: "center",
+            borderRadius: "25px",
+            margin: "10px"
           }}
         >
           Login
         </button>
 
-        <div style={{color:"white",marginTop:"10px",textAlign:"center"}}>
+        <div style={{ color: "white", marginTop: "10px", textAlign: "center" }}>
           if you forgot your password?
-          <Link to="/forgot-password" style={{color:"aquamarine"}}>Forgot Password</Link>
+          <Link to="/forgot-password" style={{ color: "aquamarine" }}>
+            Forgot Password
+          </Link>
         </div>
 
-        <div style={{color:"white",marginTop:"10px",textAlign:"center"}}>
+        <div style={{ color: "white", marginTop: "10px", textAlign: "center" }}>
           Don't have an account?
-          <Link to="/register" style={{color:"aquamarine"}}>Register</Link>
+          <Link to="/register" style={{ color: "aquamarine" }}>
+            Register
+          </Link>
         </div>
 
       </form>

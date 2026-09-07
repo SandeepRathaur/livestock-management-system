@@ -62,18 +62,42 @@ export default function Register() {
 
       <form className="auth-card" onSubmit={submit} style={{background:"none"}}>
 
-        <h2 style={{textAlign:"center",fontSize:"30px"}}>Farmer Registration</h2>
+        <h2
+          className="register-title"
+          style={{textAlign:"center",fontSize:"30px"}}
+        >
+          Farmer Registration
+        </h2>
 
-        <div style={{margin:"20%"}}>
+        {/* Only changed for responsive CSS */}
+        <div className="register-form-container">
 
           <div style={{fontWeight:"bold"}}>Farmer Name:-</div>
-          <input placeholder="Farmer Name" required style={{fontSize:"15px"}}/>
 
-          <div style={{fontWeight:"bold",marginTop:"10px"}}>Farmer Address:-</div>
-          <input placeholder="Farmer Address" required style={{fontSize:"15px"}}/>
-
-          <div style={{fontWeight:"bold",marginTop:"10px"}}>Mobile No.:-</div>
           <input
+            className="auth-input"
+            placeholder="Farmer Name"
+            required
+            style={{fontSize:"15px"}}
+          />
+
+          <div style={{fontWeight:"bold",marginTop:"10px"}}>
+            Farmer Address:-
+          </div>
+
+          <input
+            className="auth-input"
+            placeholder="Farmer Address"
+            required
+            style={{fontSize:"15px"}}
+          />
+
+          <div style={{fontWeight:"bold",marginTop:"10px"}}>
+            Mobile No.:-
+          </div>
+
+          <input
+            className="auth-input"
             placeholder="Mobile No."
             required
             style={{fontSize:"15px"}}
@@ -81,8 +105,12 @@ export default function Register() {
             onChange={(e)=>setPhone(e.target.value)}
           />
 
-          <div style={{fontWeight:"bold",marginTop:"10px"}}>Email ID:-</div>
+          <div style={{fontWeight:"bold",marginTop:"10px"}}>
+            Email ID:-
+          </div>
+
           <input
+            className="auth-input"
             placeholder="Email ID"
             required
             style={{fontSize:"15px"}}
@@ -96,21 +124,28 @@ export default function Register() {
             </p>
           )}
 
-          <div style={{fontWeight:"bold",marginTop:"10px"}}>Password:-</div>
-          <input placeholder="Password" required style={{fontSize:"15px"}}/>
+          <div style={{fontWeight:"bold",marginTop:"10px"}}>
+            Password:-
+          </div>
+
+          <input
+            className="auth-input"
+            placeholder="Password"
+            required
+            style={{fontSize:"15px"}}
+          />
 
           <button
             type="submit"
+            className="register-button"
             style={{
               color:"white",
               backgroundColor:"aqua",
               padding:"10px",
-              width:"fit-content",
               fontSize:"20px",
               textAlign:"center",
               borderRadius:"25px",
-              margin:"10px",
-              marginLeft:"20%"
+              margin:"10px"
             }}
           >
             Register
@@ -118,7 +153,9 @@ export default function Register() {
 
           <div style={{color:"white",marginTop:"10px",textAlign:"center"}}>
             Already have an Account?
-            <Link to="/login" style={{color:"aquamarine"}}>Login</Link>
+            <Link to="/login" style={{color:"aquamarine"}}>
+              Login
+            </Link>
           </div>
 
         </div>
