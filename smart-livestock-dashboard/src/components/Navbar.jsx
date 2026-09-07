@@ -12,7 +12,6 @@ export default function Navbar({ lang = "en", setLang }) {
         <a href="#how">How It Works</a>
         <a href="#contact">Contact</a>
 
-
         <Link to="/login" className="btn-outline">
           Login
         </Link>
@@ -20,10 +19,11 @@ export default function Navbar({ lang = "en", setLang }) {
         <Link to="/register" className="btn-primary">
           Register
         </Link>
-        {/* 🌐 Language Button (ADDED BEFORE LOGIN) */}
+
+        {/* 🌐 Language Button */}
         <button
           onClick={() => setLang && setLang(lang === "en" ? "hi" : "en")}
-          className="btn-outline "
+          className="btn-outline"
         >
           🌐 {lang === "en" ? "हिं" : "En"}
         </button>

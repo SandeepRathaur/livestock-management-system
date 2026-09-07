@@ -706,11 +706,33 @@ body,
 
 @media (max-width: 768px) {
 
-  /* NAVBAR */
+  /* LANDING NAVBAR - NO MENU BUTTON */
 
   .navbar {
-    padding: 14px 20px;
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
   }
+
+  .nav-logo {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-actions {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-actions a,
+  .nav-actions button {
+    white-space: nowrap;
+  }
+
+  /* TOP NAVBAR */
 
   .top-navbar {
     flex-direction: column;
@@ -940,10 +962,35 @@ body,
 
 @media (max-width: 480px) {
 
-  /* NAVBAR */
+  /* NAVBAR - NO MENU BUTTON */
 
   .navbar {
-    padding: 12px 15px;
+    padding: 12px 10px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  .nav-logo {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .nav-actions {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .nav-actions a,
+  .nav-actions button {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px 15px;
   }
 
   /* HERO */
@@ -1206,6 +1253,24 @@ body,
 ================================================== */
 
 @media (max-width: 320px) {
+
+  .navbar {
+    padding: 10px;
+  }
+
+  .nav-logo {
+    font-size: 18px;
+  }
+
+  .nav-actions {
+    gap: 8px;
+  }
+
+  .nav-actions a,
+  .nav-actions button {
+    font-size: 14px;
+    padding: 9px 10px;
+  }
 
   .hero-left h1 {
     font-size: 1.6rem;
