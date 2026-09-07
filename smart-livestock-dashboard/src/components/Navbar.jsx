@@ -23,7 +23,7 @@ export default function Navbar({ lang = "en", setLang }) {
         {/* 🌐 Language Button */}
         <button
           onClick={() => setLang && setLang(lang === "en" ? "hi" : "en")}
-          className="btn-outline"
+          className="btn-outline "
         >
           🌐 {lang === "en" ? "हिं" : "En"}
         </button>

@@ -1,11 +1,8 @@
 /* REMOVE DEFAULT MARGIN */
+
 body {
   margin: 0;
   font-family: 'Playfair Display', serif;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* ================= NAVBAR ================= */
@@ -18,8 +15,12 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
   z-index: 100;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .nav-logo {
@@ -44,6 +45,7 @@ html {
   color: #2e7d32;
 }
 
+
 /* ================= HERO ================= */
 
 .heroin {
@@ -60,13 +62,6 @@ html {
   margin-left: 10px;
 }
 
-/* Landing page hero */
-
-.hero {
-  background: linear-gradient(to right, #aaef99, #ffffff);
-  position: relative;
-}
-
 .tagline1 {
   margin-top: -10px;
   color: #444;
@@ -79,6 +74,7 @@ html {
   margin-top: 30px;
   font-weight: bold;
 }
+
 
 /* HERO */
 
@@ -114,11 +110,15 @@ html {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
+
+
+/* ================= FEATURES ================= */
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
   gap: 25px;
 }
 
@@ -126,13 +126,16 @@ html {
   padding: 20px;
   border-radius: 10px;
   background: white;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
 
 .feature-card:hover {
   transform: translateY(-6px);
 }
+
+
+/* ================= DASHBOARD ================= */
 
 .dashboard-preview {
   text-align: center;
@@ -145,17 +148,22 @@ html {
   border-radius: 10px;
 }
 
+
+/* ================= BENEFITS ================= */
+
 .benefits {
   padding: 60px 20px;
+  text-align: center;
 }
 
 .benefit-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
   gap: 25px;
   text-align: center;
   padding: 40px;
 }
+
 
 /* ================= BUTTONS ================= */
 
@@ -165,8 +173,6 @@ html {
   padding: 12px 26px;
   border-radius: 6px;
   text-decoration: none;
-  border: none;
-  cursor: pointer;
 }
 
 .btn-outline {
@@ -175,9 +181,8 @@ html {
   padding: 12px 26px;
   border-radius: 6px;
   text-decoration: none;
-  background: transparent;
-  cursor: pointer;
 }
+
 
 /* ================= INFO / FEATURES ================= */
 
@@ -190,11 +195,12 @@ html {
   color: #2e7d32;
 }
 
+
 /* CARDS */
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
   gap: 30px;
   margin-top: 40px;
 }
@@ -203,8 +209,8 @@ html {
   background: white;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform .3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .info-card:hover {
@@ -217,6 +223,7 @@ html {
   object-fit: cover;
 }
 
+
 /* ================= FEATURES SECTION ================= */
 
 .features {
@@ -227,7 +234,7 @@ html {
 .features-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 25px;
 }
 
@@ -235,8 +242,9 @@ html {
   background: white;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
+
 
 /* ================= HOW IT WORKS ================= */
 
@@ -248,7 +256,7 @@ html {
 .how-grid {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   gap: 25px;
 }
 
@@ -257,6 +265,7 @@ html {
   padding: 25px;
   border-radius: 10px;
 }
+
 
 /* ================= TESTIMONIAL ================= */
 
@@ -272,7 +281,7 @@ html {
   padding: 40px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 .hero-buttons {
@@ -280,27 +289,9 @@ html {
   justify-content: center;
   gap: 15px;
   margin-top: 20px;
+  flex-wrap: wrap;
 }
 
-/* ================= FAQ ================= */
-
-.faq {
-  padding: 60px;
-  max-width: 800px;
-  margin: auto;
-}
-
-.faq-item {
-  margin-bottom: 20px;
-}
-
-/* ================= CTA ================= */
-
-.cta {
-  text-align: center;
-  padding: 60px;
-  background: #eef7ff;
-}
 
 /* ================= SLIDER ================= */
 
@@ -329,6 +320,7 @@ html {
   }
 }
 
+
 /* ================= AUTH ================= */
 
 .auth-bg {
@@ -344,8 +336,9 @@ html {
   padding: 40px;
   border-radius: 12px;
   width: 350px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
 }
+
 
 /* ================= FOOTER ================= */
 
@@ -357,7 +350,7 @@ html {
 
 .footer-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
   gap: 30px;
   padding: 0 50px;
 }
@@ -399,6 +392,7 @@ html {
   font-size: 14px;
 }
 
+
 /* ================= DARK MODE ================= */
 
 body.dark {
@@ -412,6 +406,7 @@ body.dark .navbar {
   background: #1e1e1e;
   color: #fff;
 }
+
 
 /* ================= TOP NAVBAR ================= */
 
@@ -457,12 +452,13 @@ body.dark .navbar {
   cursor: pointer;
 }
 
+
 /* ================= FULL PAGE LAYOUT ================= */
 
 html,
 body,
 #root {
-  min-height: 100%;
+  height: 100%;
   margin: 0;
 }
 
@@ -471,6 +467,7 @@ body,
   display: flex;
   flex-direction: column;
 }
+
 
 /* TOPBAR */
 
@@ -507,6 +504,7 @@ body,
   border-radius: 4px;
 }
 
+
 /* NAVBAR BELOW TOPBAR */
 
 .horizontal-nav {
@@ -526,6 +524,7 @@ body,
   text-decoration: underline;
 }
 
+
 /* MAIN CONTENT */
 
 .main-content {
@@ -534,11 +533,13 @@ body,
   overflow: visible;
 }
 
+
 /* FOOTER STICK BOTTOM */
 
 .footer {
   margin-top: auto;
 }
+
 
 /* EXTRA */
 
@@ -571,8 +572,9 @@ body,
 }
 
 .dropdown:hover {
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255,255,255,0.7);
 }
+
 
 /* ================= ANIMAL DASHBOARD ================= */
 
@@ -585,6 +587,7 @@ body,
 .container h2 {
   margin-bottom: 20px;
 }
+
 
 /* FORM */
 
@@ -612,13 +615,14 @@ body,
   background-color: #45a049;
 }
 
+
 /* TABLE */
 
 .styled-table {
   width: 100%;
   margin-top: 30px;
   border-collapse: collapse;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   border-radius: 10px;
   overflow: hidden;
 }
@@ -644,14 +648,15 @@ body,
   transition: 0.2s;
 }
 
-/* ================= RESPONSIVE ONLY ================= */
-
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
 }
 
-/* ================= AUTH PAGES RESPONSIVE ================= */
+
+/* ==================================================
+   AUTH PAGES RESPONSIVE DESIGN
+================================================== */
 
 .auth-bg {
   width: 100%;
@@ -700,217 +705,82 @@ body,
   cursor: pointer;
 }
 
+
 /* ==================================================
    TABLET RESPONSIVE
 ================================================== */
 
 @media (max-width: 768px) {
 
-  /* LANDING NAVBAR - NO MENU BUTTON */
+  /* NAVBAR - BUTTON UI NOT CHANGED */
 
   .navbar {
-    padding: 15px 20px;
+    padding: 14px 20px;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 15px;
   }
 
-  .nav-logo {
-    width: 100%;
-    text-align: center;
-  }
-
   .nav-actions {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-  }
-
-  .nav-actions a,
-  .nav-actions button {
-    white-space: nowrap;
-  }
-
-  /* TOP NAVBAR */
-
-  .top-navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .nav-links {
     flex-wrap: wrap;
   }
 
-  /* LANDING HERO */
+
+  /* HERO */
 
   .hero-container {
     flex-direction: column;
     padding: 40px 25px;
-    gap: 30px;
     text-align: center;
   }
 
-  .hero-left,
+  .hero-left {
+    width: 100%;
+  }
+
   .hero-right {
     width: 100%;
   }
 
-  .hero-left h1 {
-    font-size: 2.2rem;
-    line-height: 1.3;
-  }
-
   .hero-right img {
     width: 100%;
-    max-width: 500px;
-    height: auto;
+    max-width: 450px;
   }
 
-  .hero-actions,
-  .hero-buttons {
+  .hero-actions {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 12px;
+    gap: 15px;
+    flex-wrap: wrap;
   }
+
 
   /* STATS */
 
   .stats {
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 20px;
     padding: 30px 20px;
     text-align: center;
   }
 
-  /* TRUSTED */
-
-  .trusted {
-    padding: 35px 20px;
-  }
-
-  .trusted-logos {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  /* FEATURES */
-
-  .features {
-    padding: 50px 25px;
-  }
-
-  .features-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
 
   /* DASHBOARD */
 
   .dashboard-preview {
-    padding: 50px 25px;
+    padding: 40px 20px;
   }
 
   .dashboard-preview img {
     width: 100%;
-    max-width: 650px;
   }
 
-  /* BENEFITS */
 
-  .benefits {
-    padding: 50px 25px;
-    text-align: center;
+  /* FOOTER */
+
+  .footer-container {
+    padding: 0 25px;
   }
 
-  .benefit-grid {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 30px 15px;
-    gap: 20px;
-  }
-
-  /* HOW */
-
-  .how {
-    padding: 50px 25px;
-  }
-
-  .how-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  /* TESTIMONIAL */
-
-  .testimonial {
-    padding: 50px 25px;
-  }
-
-  .testimonial-box {
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-  }
-
-  /* FAQ */
-
-  .faq {
-    width: auto;
-    padding: 45px 25px;
-    box-sizing: border-box;
-  }
-
-  /* CTA */
-
-  .cta {
-    padding: 50px 25px;
-  }
-
-  /* DASHBOARD */
-
-  .container {
-    width: 95%;
-    margin: 20px auto;
-    padding: 10px;
-  }
-
-  .container h2 {
-    font-size: 24px !important;
-    line-height: 1.3;
-  }
-
-  .form-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 10px;
-  }
-
-  .form-grid input,
-  .form-grid select,
-  .form-grid button {
-    width: 100%;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  .table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-  }
-
-  .styled-table {
-    min-width: 700px;
-  }
-
-  .styled-table th,
-  .styled-table td {
-    padding: 8px;
-    font-size: 14px;
-    white-space: nowrap;
-  }
 
   /* AUTH */
 
@@ -935,7 +805,44 @@ body,
     font-size: 15px;
   }
 
-  /* MILK + EXPENSES */
+
+  /* DASHBOARD */
+
+  .container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .container h2 {
+    font-size: 24px !important;
+    line-height: 1.3;
+  }
+
+  .form-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+
+  .form-grid input,
+  .form-grid select,
+  .form-grid button {
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    padding: 8px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+
+  /* MILK + EXPENSE FORMS */
 
   form[style] {
     display: flex !important;
@@ -954,7 +861,13 @@ body,
     width: 100%;
     box-sizing: border-box;
   }
+
+  .styled-table {
+    min-width: 700px;
+  }
+
 }
+
 
 /* ==================================================
    MOBILE RESPONSIVE
@@ -962,212 +875,99 @@ body,
 
 @media (max-width: 480px) {
 
-  /* NAVBAR - NO MENU BUTTON */
+  /* NAVBAR */
 
   .navbar {
-    padding: 12px 10px;
+    padding: 12px 15px;
     flex-direction: column;
-    align-items: stretch;
-    gap: 12px;
+    align-items: center;
   }
 
   .nav-logo {
-    width: 100%;
-    font-size: 20px;
     text-align: center;
   }
 
   .nav-actions {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
-  .nav-actions a,
-  .nav-actions button {
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 10px 15px;
-  }
 
   /* HERO */
 
   .hero-container {
-    padding: 35px 15px;
+    padding: 30px 15px;
     gap: 25px;
-    text-align: center;
   }
 
   .hero-left h1 {
-    font-size: 1.9rem;
-    line-height: 1.3;
+    font-size: 28px;
   }
 
   .tagline {
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 16px;
   }
 
-  .hero-actions,
-  .hero-buttons {
-    flex-direction: column;
-    align-items: stretch;
-    width: 100%;
-    gap: 12px;
-  }
-
-  .hero-actions .btn-primary,
-  .hero-actions .btn-outline,
-  .hero-buttons .btn-primary,
-  .hero-buttons .btn-outline {
-    width: 100%;
-    box-sizing: border-box;
-    text-align: center;
-  }
-
-  .hero-right img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-  /* STATS */
-
-  .stats {
-    flex-direction: column;
-    gap: 18px;
-    padding: 30px 15px;
-  }
-
-  /* TRUSTED */
-
-  .trusted {
-    padding: 30px 15px;
-  }
-
-  .trusted-logos {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
 
   /* FEATURES */
 
   .features {
-    padding: 40px 15px;
-  }
-
-  .features h2 {
-    font-size: 1.7rem;
+    padding: 50px 15px;
   }
 
   .features-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
-    margin-top: 25px;
   }
 
-  .feature-card {
-    padding: 20px;
-  }
-
-  /* DASHBOARD PREVIEW */
-
-  .dashboard-preview {
-    padding: 40px 15px;
-  }
-
-  .dashboard-preview h2 {
-    font-size: 1.7rem;
-  }
-
-  .dashboard-preview img {
-    width: 100%;
-    height: auto;
-  }
 
   /* BENEFITS */
 
   .benefits {
-    padding: 40px 15px;
-  }
-
-  .benefits h2 {
-    font-size: 1.7rem;
+    padding: 50px 15px;
   }
 
   .benefit-grid {
     grid-template-columns: 1fr;
-    padding: 25px 10px;
-    gap: 20px;
+    padding: 20px 0;
   }
+
 
   /* HOW */
 
   .how {
-    padding: 40px 15px;
-  }
-
-  .how h2 {
-    font-size: 1.7rem;
+    padding: 50px 15px;
   }
 
   .how-grid {
     grid-template-columns: 1fr;
-    gap: 18px;
-    margin-top: 25px;
   }
 
-  .how-card {
-    padding: 20px;
-  }
 
   /* TESTIMONIAL */
 
   .testimonial {
-    padding: 40px 15px;
+    padding: 50px 15px;
   }
 
   .testimonial-box {
-    width: 100%;
-    padding: 25px 15px;
-    box-sizing: border-box;
+    width: auto;
+    padding: 25px 20px;
   }
+
 
   /* FAQ */
 
   .faq {
-    width: 100%;
-    padding: 40px 15px;
-    box-sizing: border-box;
+    padding: 40px 20px;
   }
 
-  .faq h2 {
-    font-size: 1.7rem;
-  }
-
-  .faq-item {
-    margin-bottom: 25px;
-  }
 
   /* CTA */
 
   .cta {
-    padding: 45px 15px;
+    padding: 50px 20px;
   }
 
-  .cta h2 {
-    font-size: 1.7rem;
-  }
-
-  .cta .btn-primary {
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 15px;
-  }
 
   /* AUTH */
 
@@ -1211,6 +1011,7 @@ body,
     font-size: 18px !important;
   }
 
+
   /* PASSWORD EYE BUTTON */
 
   .password-container {
@@ -1246,60 +1047,38 @@ body,
     cursor: pointer !important;
     z-index: 2 !important;
   }
+
+
+  /* TOP NAVBAR */
+
+  .top-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 14px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+  }
+
+
+  /* FOOTER */
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+    text-align: center;
+  }
+
 }
+
 
 /* ==================================================
    VERY SMALL MOBILE
 ================================================== */
 
 @media (max-width: 320px) {
-
-  .navbar {
-    padding: 10px;
-  }
-
-  .nav-logo {
-    font-size: 18px;
-  }
-
-  .nav-actions {
-    gap: 8px;
-  }
-
-  .nav-actions a,
-  .nav-actions button {
-    font-size: 14px;
-    padding: 9px 10px;
-  }
-
-  .hero-left h1 {
-    font-size: 1.6rem;
-  }
-
-  .features h2,
-  .dashboard-preview h2,
-  .benefits h2,
-  .how h2,
-  .faq h2,
-  .cta h2 {
-    font-size: 1.4rem;
-  }
-
-  .btn-primary,
-  .btn-outline {
-    padding: 10px 15px;
-    font-size: 14px;
-  }
-
-  .container h2 {
-    font-size: 20px !important;
-  }
-
-  .styled-table th,
-  .styled-table td {
-    font-size: 12px;
-    padding: 6px;
-  }
 
   .auth-card {
     padding: 15px 10px;
@@ -1317,4 +1096,15 @@ body,
   .auth-input {
     font-size: 13px !important;
   }
+
+  .container h2 {
+    font-size: 20px !important;
+  }
+
+  .styled-table th,
+  .styled-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
 }
